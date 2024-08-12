@@ -1,0 +1,92 @@
+<HTML>
+<title>ABOUT</title>
+<HEAD>
+    <H1><CENTER>ABOUT ME
+</CENTER>
+</H1> 
+</HEAD>
+<BODY>
+
+<div class="line">
+
+    </div>
+<div class="whiteborder"></div>
+<div class="profilepic">
+    <img src="profile.jpg" alt="Circular Image" class="circular-image">
+    </div>
+<H2>My name is Lorenzo Metzgar, & I am a videographer and editor from Las Vegas. Nevada.  I provide high quality video for sports games shot, along with professional grade edits. With clients in real estate, soccer, boxing, & more, I can work in multiple environments & give you tailored service in accordance to your goals.<br> <br> My mission is to provide quality video for athletes and promote them to colleges/professional teams. Some of my partnerships include the Southern Nevada Officials Association(SNOA) & the Southwest Premier League(SWPL). I have done projects in Nevada, Arizona, Utah, & Colorado. <br> <br> High quality video shot in HD, with a Canon EOS Rebel T7. Films are edited with Premiere Pro. </H2>
+</BODY>
+</HTML>
+<style>
+    .line {
+    position: absolute;
+    top: 100%; /* Position the line below the header */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px; /* Adjust the width of the border */
+    height: 5px; /* Adjust the height of the border */
+    background-color: white; /* Adjust the color of the line */
+    z-index: 1000;
+}
+    h2 {  position: fixed;
+    top: 180;
+    left: 32%;
+    transform: translateX(-50%);
+    width: 600px; /* Adjust the width of the border */
+    height: 50%;
+    border-style: double;
+    border-width: 12px;
+    background-color: grey;
+    overlay: true;
+    z-index: 1000;
+    color: black;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+    body {
+       background-image: 
+          url('vegas.jpg');
+       background-repeat: repeat-y;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    h1 {position: fixed;
+        top: -10;
+        left: 465;
+        overlay: true;
+        font-size: 72px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 4.0;
+        color: white;
+    }
+.whiteborder {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px; /* Adjust the width of the border */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white */
+    overlay: true;
+    z-index: 1000;
+}  
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.circular-image {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border: 2px solid white; /* Optional: Add a border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
+    position: absolute;
+    top: 220;
+    right: 150;
+    z-index: 1000;
+}
+ </style>

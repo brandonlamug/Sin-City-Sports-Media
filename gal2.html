@@ -1,0 +1,90 @@
+<HTML>
+  <title>GALLERY</title>
+    <HEAD>
+        <H1><center>GALLERY</center>
+        </H1>
+    </HEAD>
+    <BODY>
+        <div class="row">
+            <div class="column">
+              <img src="gal1.jpg">
+              <img src="gal2.jpg">
+              <img src="gal22.jpg">
+              <img src="gal4.jpg">
+              <img src="gal5.jpg">
+              <img src="gal13.jpg">
+              <img src="gal7.jpg">
+            </div>
+        <div class="column">
+            <img src="gal9.jpg">
+            <img src="gal8.jpg">
+            <img src="gal6.jpg">
+            <img src="gal20.jpg">
+            <img src="gal11.jpg">
+            <img src="gal12.jpg">
+            <img src="gal16.jpg">
+            <img src="gal21.jpg">
+           </div>
+        <div class="column">
+            <img src="gal10.jpg">
+            <img src="gal15.jpg">
+            <img src="gal3.jpg">
+            <img src="gal14.jpg">
+            <img src="gal17.jpg">
+            <img src="gal18.jpg">
+            <img src="gal19.jpg">
+            <img src="gal20.jpg">
+          </div>
+    </BODY>
+    </HTML>
+    <style>
+        body {
+           background-image: url('vegas.jpg');
+           background-repeat: repeat-y;
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center top; /* Center horizontally and move up to the top */
+           top: -150px; /* Move the background image up by 50 pixels */
+           z-index: -1; /* Place the background behind other content */
+        }
+        h1 { font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 100px;
+        color: white;
+    }
+        .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Center the columns horizontally */
+      padding: 0 4px;
+    }
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+      align-items: center; /* Center images horizontally */
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    </style>
