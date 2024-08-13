@@ -1,0 +1,139 @@
+<HTML>
+<title>HOME</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+<style>
+      .large-heading { 
+         border-style: solid;
+         border-width: 10px;
+         border-color: white;
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         color: white;
+         line-height: 3.5;
+         overlay: true;
+         font-size: 4rem;
+         display: flex;
+    }
+
+    .is-flex {
+        display: flex;
+    }
+    .is-justify-content-center {
+        justify-content: center;
+    }
+    .is-align-items-center {
+        align-items: center;
+    }
+    .is-full-height {
+        height: 100vh;
+    }
+    
+    body {
+            padding-top: 40px; /* Adjust this value if the navbar height changes */
+        }
+    .navbar {
+            justify-content: center;
+        }
+    .navbar-center {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 70px;
+        }
+    .navbar-center .navbar-item {
+            color: blue; /* Set text color to blue */
+            margin-left: 30px; /* Add spacing between items */
+            margin-right: 30px; /* Add spacing between items */
+        }
+    .button-container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-top: 2rem; /* Adjust the distance from the heading */
+        }
+    .button {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 20px; /* Example padding */
+            border-radius: 4px; /* Example border radius */
+            z-index: 1001; /* Ensure it is above the background */
+        }
+    @media (max-width: 1024px) {
+         .large-heading {
+             font-size: 3rem; /* Adjust for tablets and smaller screens */
+         }
+         .service-content {
+             width: 95%;
+             font-size: 0.9rem;
+         }
+     }
+
+    @media (max-width: 768px) {
+        .large-heading {
+             font-size: 2rem; /* Adjust for mobile screens */
+         }
+         .service-content {
+             width: 100%;
+             font-size: 0.8rem;
+          }
+      }
+</style>
+<HEAD>
+<body>
+    <p>This is an example page with a top border.</p>
+    <div class="content">
+        <!-- Replaying video -->
+        <video id="background-video" autoplay loop muted>
+            <source src="homevid2.mp4" type="video/mp4">
+        </video>
+</div>
+<section class="section is-full-height is-flex is-align-items-center is-justify-content-center">
+   
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered large-heading">Sin City Sports Media</h1>
+            <div class="button-container">
+                <a href="https://calendar.app.google/ZYf1KyRXhpeTF6bx5">
+                    <button class="button is-link">Book Your Appointment</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar is-fixed-top is-white">
+        <div class="navbar-menu">
+            <div class="navbar-center is-blue">
+                <a class="navbar-item" href="index.html">HOME</a>
+                <a class="navbar-item" href="service.html">SERVICES</a>
+                <a class="navbar-item" href="gal2.html">GALLERY</a>
+                <a class="navbar-item" href="about.html">ABOUT</a>
+                <a class="navbar-item" href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+       
+    <div class="content">
+    </body>
+</HEAD>
+</HTML>
+<style>
+   
+
+.content {
+    padding-top: 20px; /* Adjust the padding to prevent content overlap */
+}  
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: -170;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* Ensure the video is behind other content */
+    object-fit: cover; /* Ensures the video covers the entire area */
+}
+
+
+
+
+
+
+
+</style>
